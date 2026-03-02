@@ -99,10 +99,6 @@ def agregar_cancion():
         'cancion': nueva_cancion.to_dict()
     }
 
-    # Lógica de la Bonificación (¡Asegúrate de cambiar "Bohemian Rhapsody" por la real!)
-    cancion_favorita_docente = "Bohemian Rhapsody"
-    if nombre_cancion.lower() == cancion_favorita_docente.lower():
-        respuesta['bonificacion'] = '¡Felicidades! Has ingresado la canción favorita del docente (+0.5 puntos netos).'
 
     return jsonify(respuesta), 201
 
