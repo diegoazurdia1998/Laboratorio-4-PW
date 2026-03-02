@@ -68,11 +68,11 @@ Antes de guardar, el frontend puede buscar la canción exacta para evitar errore
 * **Respuesta Esperada:** Un arreglo de objetos con las coincidencias de Spotify (nombre, artista, imagen, url).
 
 ### 2. Ingresar Nueva Canción
-[cite_start]Guarda la canción seleccionada en la base de datos local.
+Guarda la canción seleccionada en la base de datos local.
 * **Ruta:** `POST /api/canciones`
 * **Headers:** `"Content-Type": "application/json"`
 * **Body (Formato JSON requerido):**
-  [cite_start]Solo se deben enviar el nombre y el artista[cite: 14].
+  Solo se deben enviar el nombre y el artista.
   ```json
   {
     "nombre": "Bohemian Rhapsody",
